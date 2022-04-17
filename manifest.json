@@ -1,0 +1,19 @@
+{
+    "name": "Stackoverflow Anticopy",
+    "description": "Scolds you for copying code from Stackoverflow!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://*.stackoverflow.com/*"],
+            "js": ["js/content-script.js"]
+        }
+    ],
+    "icons": { 
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png" 
+    },
+    "author": "Pankaj Tanwar",
+    "permissions": ["activeTab"]
+}
